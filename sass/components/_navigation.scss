@@ -59,10 +59,10 @@
     transform: scale(1);
 }
 
-.navigation__link.current {
+.navigation__link--current {
     color: var(--accent-color);
-}
-
-.navigation__link.current::after {
-    transform: scale(1);
+    
+    &::after {
+        transform: scale(1);
+    }
 }
