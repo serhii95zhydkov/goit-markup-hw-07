@@ -29,7 +29,7 @@
           <ul class="navigation__list">
             <li class="navigation__item">
               <a
-                class="link navigation__link current"
+                class="link navigation__link navigation__link--current"
                 href="./index.html"
                 target="_self"
                 rel="noreferrer noopener"
@@ -48,18 +48,18 @@
             <li class="navigation__item"><a class="link navigation__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact">
-          <li class="contact__item">
-            <a class="link contact__link" href="mailto:info@devstudio.com">
-              <svg class="contact__icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="mailto:info@devstudio.com">
+              <svg class="contacts__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com
             </a>
           </li>
-          <li class="contact__item">
-            <a class="link contact__link" href="tel:+380961111111">
-              <svg class="contact__icon" width="10" height="16">
+          <li class="contacts__item">
+            <a class="link contacts__link" href="tel:+380961111111">
+              <svg class="contacts__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               +38 096 111 11 11
@@ -70,7 +70,7 @@
     </header>
     <!--Унікальний контент сторінки-->
     <main>
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title">
             Ефективні рішення для <br />
@@ -79,12 +79,12 @@
           <button class="button" type="button" data-modal-open>Замовити послугу</button>
         </div>
       </section>
-      <section class="section principle">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наші принципи</h2>
-          <ul class="principle__list">
+          <ul class="principle">
             <li class="principle__item">
-              <div class="principle__icon">
+              <div class="principle__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-antenna"></use>
                 </svg>
@@ -95,7 +95,7 @@
               </p>
             </li>
             <li class="principle__item">
-              <div class="principle__icon">
+              <div class="principle__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-clock"></use>
                 </svg>
@@ -106,7 +106,7 @@
               </p>
             </li>
             <li class="principle__item">
-              <div class="principle__icon">
+              <div class="principle__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-diagram"></use>
                 </svg>
@@ -117,7 +117,7 @@
               </p>
             </li>
             <li class="principle__item">
-              <div class="principle__icon">
+              <div class="principle__icon-box">
                 <svg width="70" height="70">
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
@@ -130,10 +130,10 @@
           </ul>
         </div>
       </section>
-      <section class="section works">
+      <section class="section section--nopadding-top">
         <div class="container">
-          <h2 class="works__title">Чим ми займаємося</h2>
-          <ul class="works__list">
+          <h2 class="section__title">Чим ми займаємося</h2>
+          <ul class="works">
             <li class="works__item">
               <div class="works__container">
                 <img
@@ -173,10 +173,10 @@
           </ul>
         </div>
       </section>
-      <section class="section team">
+      <section class="section section--user-background">
         <div class="container">
-          <h2 class="team__title">Наша команда</h2>
-          <ul class="team__list">
+          <h2 class="section__title">Наша команда</h2>
+          <ul class="team">
             <li class="team__item">
               <img
                 class="team__image"
@@ -186,7 +186,7 @@
                 height="260"
               />
               <div class="team__container">
-                <h3 class="team__name">Ігор Дем'яненко</h3>
+                <h3 class="team__title">Ігор Дем'яненко</h3>
                 <p class="team__text" lang="en">Product Designer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -229,7 +229,7 @@
                 height="260"
               />
               <div class="team__container">
-                <h3 class="team__name">Ольга Рєпіна</h3>
+                <h3 class="team__title">Ольга Рєпіна</h3>
                 <p class="team__text" lang="en">Frontend Developer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -272,7 +272,7 @@
                 height="260"
               />
               <div class="team__container">
-                <h3 class="team__name">Микола Тарасов</h3>
+                <h3 class="team__title">Микола Тарасов</h3>
                 <p class="team__text" lang="en">Marketing</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -315,7 +315,7 @@
                 height="260"
               />
               <div class="team__container">
-                <h3 class="team__name">Михайло Єрмаков</h3>
+                <h3 class="team__title">Михайло Єрмаков</h3>
                 <p class="team__text" lang="en">UI Designer</p>
                 <ul class="social-network">
                   <li class="social-network__item">
@@ -352,10 +352,10 @@
           </ul>
         </div>
       </section>
-      <section class="section clients">
+      <section class="section">
         <div class="container">
-          <h2 class="clients__title">Постійні клієнти</h2>
-          <ul class="clients__list">
+          <h2 class="section__title">Постійні клієнти</h2>
+          <ul class="clients">
             <li class="clients__item">
               <a class="clients__link" href="">
                 <svg class="clients__icon" width="106" height="60">
